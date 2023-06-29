@@ -1,0 +1,12 @@
+.container {
+    padding: 15px;
+}
+.listLi {
+    color: rgb(88, 55, 55);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.listLi:hover {
+    color: rgb(13, 13, 16);
+}

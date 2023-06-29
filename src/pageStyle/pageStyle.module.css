@@ -1,0 +1,65 @@
+.mainText {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 800px;
+  color: #18141c;
+  background-color: #757e95;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.sectionMowDet {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.goBackButton {
+  padding: 5px;
+  background-color: tomato;
+  display: inline-block;
+  width: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 25px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.goBackButton:hover {
+  background-color: pink;
+  color: #18141c;
+}
+
+.imgMov {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.raiting {
+    color: green;
+    font-weight: 800;
+}
+.overview {
+    font-size: 25px;
+    font-weight: 700;
+}
+.genress {
+    font-weight: 600;
+    font-size: 20px;
+}
+.genressList {
+    color: rgb(238, 14, 14);
+}
+
+.castReviews {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.castReviews:hover {
+  color: pink;
+}
