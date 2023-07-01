@@ -12,6 +12,8 @@ const MovieDetails = () => {
   const linkToBackHref = location.state?.from ?? '/movies';
 
   const { original_title, poster_path, vote_average, overview, genres } = movie;
+  
+  
   return (
     <section className={css.sectionMowDet}>
       <div>

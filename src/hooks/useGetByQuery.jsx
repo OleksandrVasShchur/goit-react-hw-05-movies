@@ -7,6 +7,7 @@ const useGetByQuery = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
+  const [isEmpty, setIsEmpty] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -19,7 +20,15 @@ const useGetByQuery = () => {
     const getMoviesByQ = async () => {
       try {
         const movieByQ = await getMovieByQuery(currentQuery);
+        if(movieByQ.length === 0) {
+          setIsEmpty(true);
+          setMovies([]);
+          return;
+
+        }
         setMovies(movieByQ);
+        setIsEmpty(false);
+
       } catch (error) {
         setError(error.message);
       } finally {
@@ -27,8 +36,8 @@ const useGetByQuery = () => {
       }
     };
     getMoviesByQ();
-  }, [searchParams]);
-  return { movies, error, isLoading, setSearchParams };
+  }, [searchParams, isEmpty]);
+  return { movies, error, isLoading, isEmpty, setSearchParams };
 };
 
 export default useGetByQuery;

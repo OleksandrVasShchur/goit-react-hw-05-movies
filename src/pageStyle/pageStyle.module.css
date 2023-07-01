@@ -63,3 +63,8 @@
 .castReviews:hover {
   color: pink;
 }
+.noFaundText {
+  text-align: center;
+    font-size: 30px;
+    color: red;
+}

@@ -4,7 +4,7 @@ import { getReviews } from '../../services/getInfo';
 import Loader from 'components/Loader/Loader';
 
 const Reviews = () => {
-  const { movieId } = useParams;
+  const { movieId } = useParams();
   const [reviews, setReviews] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
